@@ -35,12 +35,18 @@ import com.google.firebase.storage.UploadTask;
 
 
 public class RegisterActivity extends AppCompatActivity {
+    //create object of DatabaseReference class to access firebase's Realtime Database
+    // DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReferenceFromUrl("https://my-application-9fac8-default-rtdb.firebaseio.com/");
 
-    private EditText username,u_email,password,c_password,address,Country;
-    RadioGroup radioGroup;
-    RadioButton male;
-    RadioButton female;
-    private Button signup;
+
+    private EditText username,u_email,password,c_password;
+
+
+   // RadioGroup radioGroup;
+    //RadioButton male;
+    //RadioButton female;
+
+    private TextView signup;
     ImageView userphoto;
     static int PRegCode =1;
     static int REQUESCODE =1;
@@ -57,8 +63,8 @@ public class RegisterActivity extends AppCompatActivity {
         u_email=findViewById(R.id.editTextEmail);
         password=findViewById(R.id.editTextPassword);
         c_password=findViewById(R.id.editTextPassword1);
-        address = findViewById(R.id.address);
-        Country = findViewById(R.id.Country);
+        //address = findViewById(R.id.address);
+        //Country = findViewById(R.id.Country);
 
        // radioGroup = findViewById(R.id.radiogroup);
        // radioGroup.clearCheck();
@@ -76,6 +82,8 @@ public class RegisterActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
+                Intent intent= new Intent(RegisterActivity.this,LoginActivity.class);
+                startActivity(intent);
                 finish();
             }
         });
@@ -95,15 +103,15 @@ public class RegisterActivity extends AppCompatActivity {
                 final String phonetxt=phone.getText().toString();
                 final String Password=password.getText().toString();
                 final String Password2=c_password.getText().toString();
-                final  String Address=address.getText().toString();
-                final String country=Country.getText().toString();
+                //final  String Address=address.getText().toString();
+                //final String country=Country.getText().toString();
                 //final String textGender = radioGroup.getText().toString();
                // int selectgenderid = radioGroup.getCheckedRadioButtonId();
                 //radioGroup = findViewById(selectgenderid);
 
 
 
-                if (name.isEmpty() || email.isEmpty() || phonetxt.isEmpty() || Password.isEmpty() || Address.isEmpty() || country.isEmpty()){
+                if (name.isEmpty() || email.isEmpty() || phonetxt.isEmpty() || Password.isEmpty()){
 
                     ///something goes wrong: all field must be filled
                     ///we need to display a error message
@@ -205,7 +213,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 if (task.isSuccessful()){
                                     //user information update successfully
                                    showMessage("Register Complete");
-                                    upadedUI();
+                                   // upadedUI();
                                 }
                             }
                         });
@@ -217,13 +225,13 @@ public class RegisterActivity extends AppCompatActivity {
 
 
     }
-
+/*
     private void upadedUI() {
         Intent home= new Intent(getApplicationContext(),Home.class);
         startActivity(home);
         finish();
     }
-
+*/
 
     // Simple message to toast message
 

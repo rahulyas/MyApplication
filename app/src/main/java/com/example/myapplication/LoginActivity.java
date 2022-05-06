@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
 private FirebaseAuth mAuth;
-private Button loginbtn;
+private TextView loginbtn;
 private Intent MainActivity;
 private Intent Home;
     @Override
@@ -29,7 +30,7 @@ private Intent Home;
 
         final EditText usermail = findViewById(R.id.phone);
         final EditText password = findViewById(R.id.password);
-        final Button loginbtn = findViewById(R.id.loginbtn);
+        final TextView loginbtn = findViewById(R.id.loginbtn);
         final TextView registerNowBtn = findViewById(R.id.registerbtn);
 
         registerNowBtn.setOnClickListener(new View.OnClickListener() {

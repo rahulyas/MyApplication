@@ -156,8 +156,8 @@ Home extends AppCompatActivity implements NavigationView.OnNavigationItemSelecte
     }
 
     public void updateNavHeader(){
-        NavigationView navigationView = binding.navView;
-        View headerView = navigationView.getHeaderView(0);
+        NavigationView navigationView1 =(NavigationView) findViewById(R.id.nav_view);
+        View headerView = navigationView1.getHeaderView(0);
         TextView navusername = headerView.findViewById(R.id.nav_user_name);
         TextView navusermail = headerView.findViewById(R.id.nav_user_email);
         ImageView navuserphoto = headerView.findViewById(R.id.nav_user_photo);

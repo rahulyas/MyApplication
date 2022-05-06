@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1C1B2B"
     tools:context=".PhoneAuthentication.Main">
 
     <LinearLayout
@@ -18,7 +19,7 @@
             android:layout_height="wrap_content"
             android:text="Verify Your Number"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
         <TextView
@@ -26,6 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:gravity="center"
+            android:textColor="@color/white"
             android:text="Please enter your mobile number to receive a verification code"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
 
@@ -47,6 +49,7 @@
                 android:maxLines="1"
                 android:singleLine="true"
                 android:text="+91"
+                android:textColor="@color/white"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
                  />
 
@@ -64,6 +67,8 @@
                 android:inputType="phone"
                 android:maxLines="1"
                 android:singleLine="true"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Title">
 
 

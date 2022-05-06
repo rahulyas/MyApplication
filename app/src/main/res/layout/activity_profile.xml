@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1C1B2B"
     tools:context=".PhoneAuthentication.Profile">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,72 +23,69 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/user_profile"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/ic_baseline_person_24"
-            android:foregroundGravity="center" />
+    <ImageView
+        android:id="@+id/user_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_baseline_person_24"
+        android:foregroundGravity="center" />
 
 
-        <TextView
-            android:id="@+id/user_email"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:gravity="center"
-            android:text="Email"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-            />
-        <TextView
-            android:id="@+id/user_name"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:gravity="center"
-            android:text="Name"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-            />
-        <TextView
-            android:id="@+id/user_phone"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:gravity="center"
-            android:text="Phone Number"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-            />
-        <TextView
-            android:id="@+id/user_Gender"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:gravity="center"
-            android:text="Gender"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-            />
-        <TextView
-            android:id="@+id/user_address"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:gravity="center"
-            android:text="Address"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-            />
-        <TextView
-            android:id="@+id/user_City"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:gravity="center"
-            android:text="City"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-            />
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Email"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        />
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Name"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        />
+    <TextView
+        android:id="@+id/user_phone"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Phone Number"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        />
+    <TextView
+        android:id="@+id/user_Gender"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Gender"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        />
+    <TextView
+        android:id="@+id/user_address"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Address"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        />
+    <TextView
+        android:id="@+id/user_City"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="City"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        />
 
 
-    </LinearLayout>
-
-
-
-</RelativeLayout>
+</LinearLayout>
+</LinearLayout>
